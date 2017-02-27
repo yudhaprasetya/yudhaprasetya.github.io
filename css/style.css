@@ -1,0 +1,19 @@
+html {
+	font: normal 300 16px/25px "ubuntu", Arial, "libra sans", sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+.embed {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.abu {
+	background: grey;
+	margin: 0;
+}
+.artikel {
+	padding: 5%;
+}
