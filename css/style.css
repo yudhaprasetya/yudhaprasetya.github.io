@@ -1,19 +1,22 @@
-html {
-	font: normal 300 16px/25px "ubuntu", Arial, "libra sans", sans-serif;
-}
-
 body {
-	margin: 0;
+    margin: 10px;
+    font-family: 'Lucida Console';
 }
 
-.embed {
-	padding-left: 5%;
-	padding-right: 5%;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: aqua;
 }
-.abu {
-	background: grey;
-	margin: 0;
+li {
+    float: left;
+
 }
-.artikel {
-	padding: 5%;
+
+li a{
+    display: block;
+    padding: 16px;
+    text-decoration: none;
 }

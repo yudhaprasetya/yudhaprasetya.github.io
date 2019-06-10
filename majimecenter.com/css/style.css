@@ -1,0 +1,46 @@
+﻿body {
+    margin: auto;
+    font-family: sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+.header_contact {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.contact {
+    display: block;
+    padding: 20px;
+    float: right;
+}
+
+i {
+    color: lightblue;
+    float: right;
+    padding: 10px;
+}
+span {
+    color: lightblue;
+    float: right;
+    padding: 10px;
+    font-size: 0.8em;
+}
