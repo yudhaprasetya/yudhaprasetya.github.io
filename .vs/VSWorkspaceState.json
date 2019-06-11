@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css"
+    "\\css",
+    "\\majimecenter.com",
+    "\\majimecenter.com\\css"
   ],
-  "SelectedNode": "\\css\\style.css",
+  "SelectedNode": "\\majimecenter.com\\css\\style.css",
   "PreviewInSolutionExplorer": false
 }
