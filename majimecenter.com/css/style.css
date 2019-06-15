@@ -38,6 +38,10 @@ i {
     float: right;
     padding: 10px;
 }
+
+.center {
+    text-align: center;
+}
 span {
     color: lightblue;
     float: right;
