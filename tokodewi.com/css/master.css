@@ -1,0 +1,20 @@
+body {
+  font-size: 10pt;
+  font-family: inherit;
+}
+
+.topnav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  padding: 10px;
+}
+
+.no_use {
+  z-index: 10;
+  background-color: #ddd;
+  color: black;
+  text-align: center;
+  height: 24px;
+
+}
