@@ -16,5 +16,7 @@ body {
   color: black;
   text-align: center;
   height: 24px;
-
+}
+.mySlides {
+  display:none;
 }
