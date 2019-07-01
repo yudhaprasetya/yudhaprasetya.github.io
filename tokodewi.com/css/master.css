@@ -1,15 +1,13 @@
 body {
   font-size: 10pt;
-  font-family: inherit;
+  font-family: sans-serif;
 }
-
-.topnav {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  padding: 10px;
+.w3-tangerine {
+  font-family: 'Tangerine', serif;
 }
-
+a {
+  text-decoration: none;
+}
 .no_use {
   z-index: 10;
   background-color: #ddd;

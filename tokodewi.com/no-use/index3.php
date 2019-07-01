@@ -1,35 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <style media="screen, print">
+    <?php include 'css/master.css'; ?>
+  </style>
   <meta charset="utf-8" />
   <title>Toko Dewi</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="/css/master.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <title>Toko Dewi</title>
 </head>
 <body>
-  <div class="w3-top w3-white">
-
-    <div class="w3-container w3-right">
-      <a href="/">Mitra Tokodewi</a>
-      <a href="/">Mulai Berjualan</a>
-      <a href="/">Promo</a>
-      <a href="/">Pusat Bantuan</a>
-    </div>
-    <hr>
-    <div class="w3-container w3-padding w3-center w3-border">
-
-      <a href="/">Tokodewi.com</a>
-      <a href="/">Kategori</a>
-      <input class="w3-round-large w3-border" type="text" placeholder="Cari Produk" name="" value="">
-      <button type="submit" name="search"><i class="fas fa-search"></i></button>
-      <a href="/"><i class="fas fa-shopping-cart"></i></a>
-      <a href="/"><i class="far fa-bell"></i></a>
-      <a href="/"><i class="far fa-envelope"></i></a>
-      <a href="/"><i class="far fa-user"></i>Pemilik Toko</a>
-    </div>
-  </div>
-  <br><br><br><br><br><br>
+<?php include 'admin/topnav.php'; ?>
 
   <div class="w3-row w3-container">
     <div class="w3-border w3-round-large w3-quarter">
