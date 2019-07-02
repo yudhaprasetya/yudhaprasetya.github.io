@@ -18,7 +18,7 @@
       <a class="w3-padding" href="/"><i class="fas fa-shopping-cart"></i></a>
       <div class="w3-right w3-padding">
         <a class="w3-border w3-padding w3-round" style="max-width: 100px" href="#">Masuk</a>
-        <a class="w3-border w3-padding w3-round" style="max-width: 100px" href="#">Daftar</a>
+        <a class="w3-border w3-padding w3-round" style="max-width: 100px" href="/admin/register.php">Daftar</a>
       </div>
     </div>
   </div>
