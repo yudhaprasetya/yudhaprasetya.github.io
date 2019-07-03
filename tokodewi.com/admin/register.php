@@ -36,27 +36,18 @@
     date_default_timezone_set("Asia/Jakarta");
     $now = date("Y-m-d H:i:s");
 
-    $sql1 = "CREATE TABLE $username (
-      id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-      username VARCHAR(50) NOT NULL,
-      password VARCHAR(50) NOT NULL,
-      waktu (datetime)
-    )";
+    $sql = "INSERT INTO user" . "(username, password, waktu)"."VALUES"."('$username', '$password', '$now')";
 
-    $sql2 = "INSERT INTO $username" . "(username, password, waktu)"."VALUES"."('$username', '$password', '$now')";
+    mysqli_select_db($conn, $sql);
+    $retval = mysqli_query($conn, $sql);
 
-    mysqli_select_db($conn, $sql1);
-    $retval1 = mysqli_query($conn, $sql1);
-    mysqli_select_db($conn, $sql2);
-    $retval2 = mysqli_query($conn, $sql2);
-
-    if (! $retval1) {
+    if (! $retval) {
       // code...
 
-      die('Ada Data Yang Harus Di isi: '. $conn->connect_error);
+      die('Username ini Sudah Digunakan!!!: '. $conn->connect_error);
     }
 
-    echo "<h1>Transaksi Berhasil di Simpan</h1>";
+    echo "<h1>Kamu Berhasil Mendaftar!</h1> Yuk <a href=\"/admin/login.php\">Masuk</a>";
     mysqli_close($conn);
   } else {
     // code...
@@ -91,7 +82,7 @@
         <button class="w3-button w3-round w3-padding w3-border" type="submit" name="button"><a href="#"><i class="fab fa-google w3-text-blue w3-large w3-padding"></i> Google</a></button>
         <br>
         <p>atau daftar dengan</p>
-        <form class="" action="/admin/login.php" method="post">
+        <form class="" action="<?php $PHP_SELF ?>" method="post">
           <p class="w3-left">Nomor Ponsel atau Email</p>
           <input class="w3-input w3-border w3-round" type="text" required placeholder="Nomor Ponsel Atau Email" name="username">
           <p class="w3-left">Katasandi</p>

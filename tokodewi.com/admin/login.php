@@ -37,11 +37,11 @@
         </table>
 
         <br>
-        <form class="" action="index.html" method="post">
+        <form class="" action="proses_login.php" method="post">
           <p class="w3-left">Nomor Ponsel atau Email</p>
-          <input class="w3-input w3-border w3-round" type="text" placeholder="Nomor Ponsel Atau Email" name="" value="">
+          <input class="w3-input w3-border w3-round" type="text" placeholder="Nomor Ponsel Atau Email" name="username" value="">
           <p class="w3-left">Katasandi</p>
-          <input class="w3-input w3-border w3-round" placeholder="Masukkan Katasandi" type="password" name="" value="">
+          <input class="w3-input w3-border w3-round" placeholder="Masukkan Katasandi" type="password" name="password" value="">
           <br>
           <p>
             <input class="w3-check" type="checkbox" name="" value=""> Ingat Saya
