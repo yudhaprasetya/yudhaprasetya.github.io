@@ -13,24 +13,38 @@
   <!--Navigasi Atas-->
   <?php include 'asset/top-nav.php'; ?>
 
-  <table>
-    <tr>
-      <td class="w3-padding">Nama Barang</td>
-      <td class="w3-padding"><input type="text" class="w3-border w3-input" name="" value=""> </td>
-    </tr>
-    <tr>
-      <td class="w3-padding">Jenis Barang</td>
-      <td class="w3-padding"><input type="text" class="w3-border w3-input" name="" value=""> </td>
-    </tr>
-    <tr>
-      <td class="w3-padding">Harga Barang</td>
-      <td class="w3-padding"><input type="number" placeholder="Rp" class="w3-border w3-input" name="" value=""><td>
-    </tr>
-    <tr>
-      <td class="w3-padding">Upload Foto</td>
-      <td class="w3-padding"><input type="file" class="w3-border w3-input" name="" value=""> </td>
-    </tr>
-  </table>
+  <div class="w3-padding">
+    <?php include 'proses-upload.php'; ?>
+    <form enctype="multipart/form-data" class="w3-border w3-padding" action="proses-upload.php" method="post">
+      <table>
+        <tr>
+          <td class="w3-padding">Nama Barang</td>
+          <td class="w3-padding"><input type="text" class="w3-border w3-input" name="nama_barang"></td>
+        </tr>
+        <tr>
+          <td class="w3-padding">Jenis Barang</td>
+          <td class="w3-padding"><input type="text" class="w3-border w3-input" name="jenis_barang"></td>
+        </tr>
+        <tr>
+          <td class="w3-padding">Harga Barang</td>
+          <td class="w3-padding"><input type="number" placeholder="Rp" class="w3-border w3-input" name="harga_barang"><td>
+          </tr>
+          <tr>
+            <td class="w3-padding">Upload Foto</td>
+            <td class="w3-padding"><input type="file" class="w3-border w3-input" name="foto[]"></td>
+          </tr>
+        </table>
 
-</body>
-</html>
+        <div class="w3-padding">
+          <hr class="w3-border-black">
+
+          <button class="w3-btn w3-blue" type="submit" name="upload">Simpan</button>
+          <button class="w3-btn w3-blue" type="reset">Reset form</button>
+
+        </div>
+      </form>
+    </div>
+
+
+  </body>
+  </html>
