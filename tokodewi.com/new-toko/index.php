@@ -1,3 +1,12 @@
+<?php
+session_start();
+if(!isset($_SESSION['email'])) {
+  header('location:/admin/login.php');
+} else {
+  $email = $_SESSION['email'];
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -16,14 +25,8 @@
   <!--Navigasi Atas-->
   <?php include 'asset/top-nav.php'; ?>
 
-  <div class="w3-padding">
-    <button class="w3-btn w3-blue" style="width: 150px;" name="button">Mulai Belanja</button>
-  </div>
-  <div class="w3-padding">
-    <a href="jualan.php" class="w3-btn w3-blue" style="width: 150px;">Mulai Berjualan</a>
-  </div>
-  <div class="w3-padding">
-    <a href="jualan.php" class="w3-btn w3-blue" style="width: 150px;">History Belanja</a>
+  <div class="w3-padding w3-center">
+    <h1>Produk Yang Di Jual</h1>
   </div>
 
   <?php
