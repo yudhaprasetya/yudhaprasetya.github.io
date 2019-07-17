@@ -1,3 +1,18 @@
 .btn-trans {
   min-width: 150px;
 }
+.produk {
+  width: 20%;
+  float: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 641px) {
+  .produk {
+    width: 43%;
+    float: left;
+  }
+}

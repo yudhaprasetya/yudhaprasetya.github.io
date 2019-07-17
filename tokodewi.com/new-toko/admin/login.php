@@ -12,6 +12,29 @@
 <body>
 
   <!--Navigasi Atas-->
-  <?php include 'asset/top-nav.php'; ?>
+  <?php include '../asset/top-nav.php'; ?>
+  <div class="w3-padding">
+    <?php include 'proses-login.php'; ?>
+    <form enctype="multipart/form-data" class="w3-border w3-padding" action="proses-login.php" method="post">
+      <table>
+        <tr>
+          <td class="w3-padding">Username</td>
+          <td>:</td>
+          <td class="w3-padding"><input placeholder="E-mail atau No. Hp" type="text" class="w3-border w3-input" name="jenis_barang"></td>
+        </tr>
+        <tr>
+          <td class="w3-padding">Password</td>
+          <td>:</td>
+          <td class="w3-padding"><input type="password" class="w3-border w3-input" name="jenis_barang"></td>
+        </tr>
+      </table>
+
+      <div class="w3-padding">
+        <hr class="w3-border-black">
+        <button class="w3-btn w3-blue" type="submit" name="login">Login</button>
+        <a class="w3-btn w3-round w3-border" href="daftar.php">Daftar Sekarang</a>
+      </form>
+      </div>
+  </div>
 </body>
 </html>
