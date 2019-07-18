@@ -10,9 +10,18 @@ a {
   text-decoration: none;
 }
 
+.beli {
+  width: 20%;
+  float: left;
+}
 @media screen and (max-width: 641px) {
   .produk {
     width: 43%;
+    float: left;
+  }
+
+  .beli {
+    width: 20%;
     float: left;
   }
 }

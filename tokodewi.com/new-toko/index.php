@@ -11,14 +11,17 @@ if(!isset($_SESSION['email'])) {
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <style media="screen">
-    <?php include 'css/master.css'; ?>
+    <?php
+    include 'css/master.css';
+    include 'css/font-awesome.css';
+    include 'css/w3-css.css';
+    ?>
   </style>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<!--  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-  <title>Toko Q . Com</title>
+-->  <title>Toko Q . Com</title>
 </head>
 <body>
 
@@ -33,7 +36,7 @@ if(!isset($_SESSION['email'])) {
 
   require 'admin/conn.php';
 
-  $sql = "SELECT nama_barang, jenis_barang, harga_barang, foto FROM daftar_barang";
+  $sql = "SELECT id, nama_barang, jenis_barang, harga_barang, foto FROM daftar_barang";
   $result = $conn->query($sql);
   echo "
   <div class=\"w3-padding\">
@@ -46,6 +49,7 @@ if(!isset($_SESSION['email'])) {
       echo "
 
       <div class=\"w3-card produk w3-margin w3-center w3-border\">
+      <a class=\"w3-btn w3-green\" href=\"/beli.php?id=".$row['id']."\">Beli</a>
       <img src=\"/asset/images/".$row["foto"]."\" alt=".$row["nama_barang"]." style=\"width: 100%\">
       <div class=\"w3-container\">
       <h4><b>".$row["nama_barang"]."</b></h4>
@@ -56,7 +60,7 @@ if(!isset($_SESSION['email'])) {
       ";
     }
   } else {
-    echo "0 results";
+    echo "<h1>Barang Kosong</h1>";
   }
   echo "
   </div>
