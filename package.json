@@ -1,0 +1,40 @@
+{
+  "name": "yudhaprasetya.github.io",
+  "version": "1.0.0",
+  "description": "https://github.com/yudhaprasetya/yudhaprasetya.github.io.git",
+  "main": "app.js",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {
+    "web-app-start": "*"
+  },
+  "scripts": {
+    "dev": "node node_modules/web-app-start/scripts/dev",
+    "major": "node node_modules/web-app-start/scripts/build --major",
+    "minor": "node node_modules/web-app-start/scripts/build --minor",
+    "patch": "node node_modules/web-app-start/scripts/build --patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yudhaprasetya/yudhaprasetya.github.io.git"
+  },
+  "author": "yudha prasetya usman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yudhaprasetya/yudhaprasetya.github.io/issues"
+  },
+  "homepage": "https://github.com/yudhaprasetya/yudhaprasetya.github.io#readme",
+  "babel": {
+    "presets": [
+      [
+        "latest",
+        {
+          "es2015": {
+            "modules": false
+          }
+        }
+      ]
+    ]
+  }
+}
