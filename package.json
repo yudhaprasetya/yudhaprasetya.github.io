@@ -1,0 +1,22 @@
+{
+  "name": "yudhaprasetya.github.io",
+  "version": "1.0.0",
+  "description": "https://github.com/yudhaprasetya/yudhaprasetya.github.io.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yudhaprasetya/yudhaprasetya.github.io.git"
+  },
+  "author": "yudha prasetya usman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yudhaprasetya/yudhaprasetya.github.io/issues"
+  },
+  "homepage": "https://github.com/yudhaprasetya/yudhaprasetya.github.io",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
