@@ -3,20 +3,23 @@
   "version": "1.0.0",
   "description": "https://github.com/yudhaprasetya/yudhaprasetya.github.io.git",
   "main": "index.js",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {
+    "electron": "^5.0.8"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yudhaprasetya/yudhaprasetya.github.io.git"
   },
-  "author": "yudha prasetya usman",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/yudhaprasetya/yudhaprasetya.github.io/issues"
   },
-  "homepage": "https://github.com/yudhaprasetya/yudhaprasetya.github.io",
-  "dependencies": {
-    "gh-pages": "^2.0.1"
-  }
+  "homepage": "https://github.com/yudhaprasetya/yudhaprasetya.github.io#readme"
 }
