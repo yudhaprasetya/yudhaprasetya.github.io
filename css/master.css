@@ -1,9 +1,8 @@
 body {
 /*  background-image: url('/img/bg.png'); */
-}
-
-.w3-tangerine {
-  font-family: "Tangerine", serif;
+background-color: darkslategray;
+color: lightcyan;
+font-family: sans-serif;
 }
 
 a {
