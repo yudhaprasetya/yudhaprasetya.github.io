@@ -21,7 +21,7 @@
                 <form action="" method="post">
                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLogin" aria-expanded="false" aria-controls="collapseLogin">Klik disini untuk Login</button>
 
-                    <div class="collapse" id="collapseLogin">
+                    <div class="collapse p-2" id="collapseLogin">
                         <div class="card card-body">
                             <input class="form-control" type="text" placeholder="login ke akun mu">
                         </div>
@@ -35,10 +35,18 @@
         <div class="row justify-content-md-center">
             <div class="col-md-auto p-2">
                 <h4>Silahkan Kontak User untuk Mendaftar Website Anda</h4>
-                <form action="" method="post">
-                    <input class="form-control" type="text" placeholder="Nama Usaha">
-                </form>
+                <div class="col-md-auto p-2">
+                    <form action="" method="post">
+                        <input class="form-control" type="text" placeholder="Nama Usaha">
+                    </form>
+                </div>
+                <div class="col-md-auto p-2">
+                    <form action="" method="post">
+                        <input class="form-control" type="text" placeholder="Nama Usaha">
+                    </form>
+                </div>
             </div>
+
         </div>
     </div>
 </body>
